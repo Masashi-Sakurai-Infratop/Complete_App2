@@ -9,5 +9,6 @@
   <p>説明：<%= post_image.caption %></p>
   <!--このpost_image.user.nameは便利だね！post_imageモデルのuser_idの情報をもとにUserモデルからUserモデルのカラムを取り出してくれる-->
   <p>ユーザーネーム：<%= post_image.user.name %></p>
+  <p><%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %></p>
 </div>
 <% end %>

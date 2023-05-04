@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # メソッド名をシンボル形式で渡すことで、そのシンボルに対応するメソッドを呼び出します。
   # これはRubyの特徴的な構文であり、メソッドをオブジェクトとして扱うことができる
   # オブジェクト指向プログラミングの概念に基づいています。
-  ## before_actionメソッドにメソッド名をシンボル形式で渡し、ifキーにもメソッド名をシンボル形式で
+  ## before_actionメソッドにメソッド名をシンボル形式で渡し、ifキーにもメソッド名をシンボル形式で渡す。
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   def after_sign_in_path_for(resource) ##デフォルトの場合はroot_pathになってる
